@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="ja" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,7 +26,7 @@
         }
     </style>
 </head>
-<body class="bg-slate-100 text-slate-800 text-sm">
+<body id="top" class="bg-slate-100 text-slate-800 text-sm">
 
     <div class="max-w-[1000px] mx-auto bg-white shadow-lg border-x border-slate-300">
 
@@ -38,18 +38,16 @@
                     <img src="logo.png" alt="YUK 株式会社友健開発 ロゴ" class="h-10 sm:h-12 w-auto object-contain">
                     <h1 class="text-2xl font-bold text-slate-900 tracking-wider">株式会社友健開発</h1>
                 </div>
-                <!-- サブナビ -->
+                <!-- サブナビ（スクロールリンク設定済み） -->
                 <div class="text-right">
                     <div class="text-xs text-slate-500 space-x-3">
-                        <a href="#" class="hover:underline">HOME</a>
+                        <a href="#top" class="hover:underline">HOME</a>
                         <span>|</span>
-                        <a href="#" class="hover:underline">事業案内</a>
+                        <a href="#business" class="hover:underline">事業案内</a>
                         <span>|</span>
-                        <a href="#" class="hover:underline">会社概要</a>
+                        <a href="#company" class="hover:underline">会社概要</a>
                         <span>|</span>
-                        <a href="#" class="hover:underline">お問い合わせ</a>
-                        <span>|</span>
-                        <a href="#" class="hover:underline">Privacy Policy</a>
+                        <a href="#contact" class="hover:underline">お問い合わせ</a>
                     </div>
                 </div>
             </div>
@@ -78,12 +76,12 @@
 
             <!-- 【左サイドバー】 (3列) -->
             <div class="md:col-span-3 space-y-4">
-                <!-- 左側ボタン群 -->
+                <!-- 左側ボタン群（各セクションへスクロール） -->
                 <div class="space-y-2 text-center">
-                    <a href="#" class="block bg-slate-200 text-slate-900 hover:bg-white text-xs font-bold py-2 rounded shadow transition">
+                    <a href="#business" class="block bg-slate-200 text-slate-900 hover:bg-white text-xs font-bold py-2 rounded shadow transition">
                         豊富な実績<br><span class="text-blue-900">売買仲介・宅地造成・建築</span>
                     </a>
-                    <a href="#" class="block bg-slate-200 text-slate-900 hover:bg-white text-xs font-bold py-2 rounded shadow transition">
+                    <a href="#contact" class="block bg-slate-200 text-slate-900 hover:bg-white text-xs font-bold py-2 rounded shadow transition">
                         福岡市内及び近郊<br><span class="text-blue-900">土地の買取・建物付きでもOK</span>
                     </a>
                 </div>
@@ -101,7 +99,7 @@
                 </div>
 
                 <!-- 事業案内セクション -->
-                <div class="bg-white rounded border border-slate-200 overflow-hidden">
+                <div id="business" class="bg-white rounded border border-slate-200 overflow-hidden scroll-mt-4">
                     <h4 class="bg-slate-100 font-bold text-slate-800 px-4 py-2.5 border-b border-slate-200 text-sm">
                         事業案内
                     </h4>
@@ -125,7 +123,7 @@
                 </div>
 
                 <!-- 会社概要 -->
-                <div class="bg-white rounded border border-slate-200 overflow-hidden">
+                <div id="company" class="bg-white rounded border border-slate-200 overflow-hidden scroll-mt-4">
                     <h4 class="bg-slate-100 font-bold text-slate-800 px-4 py-2.5 border-b border-slate-200 text-sm">
                         会社概要
                     </h4>
@@ -176,7 +174,7 @@
                 </div>
 
                 <!-- お問い合わせ -->
-                <div class="bg-white rounded border border-slate-200 overflow-hidden">
+                <div id="contact" class="bg-white rounded border border-slate-200 overflow-hidden scroll-mt-4">
                     <h4 class="bg-slate-100 font-bold text-slate-800 px-4 py-2.5 border-b border-slate-200 text-sm">
                         お問い合わせ
                     </h4>
